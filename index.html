@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+  <style>
+    .logo{
+      background:orange;
+      margin-top:-21;
+      margin-left: -14;
+      margin-right: -8;
+      padding-bottom:3;
+      color:white;
+      font-family:'Oswald';
+    }
+    .naem{
+      margin-top:30;
+      text-align:center;
+    }
+    #gaem{
+      margin-top:30;
+      text-align:center;
+    }
+    #gameover{
+      margin-top:30;
+      text-align:center;
+    }
+    #gamenotover{
+      margin-top:30;
+      text-align:center;
+    }
+
+  </style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+</head>
+<body>
+  <div class="logo">
+    <h1><img src="https://psv4.userapi.com/c816122/u320502491/docs/74fe6780f7e0/ulogo.png?extra=F2n-iX_KbUZiOhKs9stODXwoviU-rm_LdWTCI6IuqAOAHhr8S5xNLKtujjC8eYSyVRkd39W6nXItWACnrXoOMgw1c_GbjteMCW0Cgyn_ZFm-Bg_ejzLdgtIlab0" height =128>Яикчоту</h1>
+    
+  </div>
+  <div class="naem" id="chusnaem">
+    <input type="text" name="gosnaem" id="gosname">
+    <input type="button" value="OK" id="gosnameok" onclick=changinggosname()>
+    <p>Введите название государства.</p>
+  </div>
+  <div id="gaem">
+    <p id="gosnamep">Государство: undefined</p>
+    <p id="gosstatus">undefined</p>
+    <p id="gosday">День: 0</p>
+    <p id="gosinf">Население: undefined | Территория: undefined</p>
+    <p>Что происходит:</p>
+    <select multiple size=24 id="heh"> 
+    </select>
+  </div>
+  <div id="gameover">
+    <p>Игра окончена.</p>
+    <p id="prichina">undefined.</p>
+    <p id="gamerecord">Вы продержались undefined дней</p>
+    <input type="button" value="Сыграть еще" id="btnagain" onclick=playagain()> 
+  </div>
+  <div id="gamenotover">
+    <p>Вы победили!!!</p>
+    <p id="prichina2">Все страны повержены. Остались только вы.</p>
+    <p id="gamerecord2">Вы продержались undefined дней</p>
+    <input type="button" value="Сыграть еще" id="btnagain" onclick=playagain()> 
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
