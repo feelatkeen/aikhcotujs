@@ -2,15 +2,35 @@
 <head>
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+<link rel="icon" href="https://raw.githubusercontent.com/feelatkeen/aikhcotujs/dbb94fb2e1f63936844c17e00d58f1ca1767244b/ulogo.png">
+<title>Яикчоту</title>
   <style>
-    .logo{
-      background:orange;
+    .logoold{
+      background:#cc00cc;
       margin-top:-21;
       margin-left: -14;
       margin-right: -8;
       padding-bottom:3;
       color:white;
       font-family:'Oswald';
+      text-shadow:0px 0px 2px black;
+    }
+    #utochkaold{
+      filter: drop-shadow(0px 0px 1px black);
+    }
+    .logonew{
+      text-align:center;
+      font-family:'Oswald';
+      background:#cc00cc;
+      color:white;
+      text-shadow: 0px 0px 10px black;
+      padding-bottom:2;
+      margin-top:-21;
+      margin-left: -14;
+      margin-right: -8;
+    }
+    #utochka{
+      filter: drop-shadow(0px 0px 3px black);
     }
     .naem{
       margin-top:30;
@@ -28,15 +48,40 @@
       margin-top:30;
       text-align:center;
     }
+    select{
+      background:#cc00cc;
+      border-style:solid;
+      border-color:#660066;
+      border-radius:3px;
+      color:white;
+      text-shadow: 0px 0px 2px black;
+    }
+    input{
+      background:#cc00cc;
+      border-style:solid;
+      border-color:#660066;
+      border-radius:32px;
+      padding-left:10;
+      padding-right:10;
+      color:white;
+      text-shadow: 0px 0px 2px black;
+    }
+    body{
+      font-family:'Oswald';
+    }
 
   </style>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
   
 </head>
 <body>
-  <div class="logo">
-    <h1><img src="https://psv4.userapi.com/c816122/u320502491/docs/74fe6780f7e0/ulogo.png?extra=F2n-iX_KbUZiOhKs9stODXwoviU-rm_LdWTCI6IuqAOAHhr8S5xNLKtujjC8eYSyVRkd39W6nXItWACnrXoOMgw1c_GbjteMCW0Cgyn_ZFm-Bg_ejzLdgtIlab0" height =128>Яикчоту</h1>
-    
+  <div class="logoold">
+    <h1><img src="https://raw.githubusercontent.com/feelatkeen/aikhcotujs/dbb94fb2e1f63936844c17e00d58f1ca1767244b/ulogo.png" height="128" id="utochkaold">Яикчоту  
+    </h1>    
+  </div>
+  <div class="logonew">
+    <img src="https://raw.githubusercontent.com/feelatkeen/aikhcotujs/dbb94fb2e1f63936844c17e00d58f1ca1767244b/ulogo.png" height="500" id="utochka">
+    <h1>Яикчоту</h1>
   </div>
   <div class="naem" id="chusnaem">
     <input type="text" name="gosnaem" id="gosname">
@@ -64,5 +109,6 @@
     <p id="gamerecord2">Вы продержались undefined дней</p>
     <input type="button" value="Сыграть еще" id="btnagain" onclick=playagain()> 
   </div>
+  <p>Feelatoff and CTL 2017</p>
   <script type="text/javascript" src="script.js"></script>
 </body>
