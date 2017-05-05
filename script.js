@@ -51,10 +51,10 @@ function playagain(){
 function gosudarstvaisdead(array){
 _.each(array , function (gos){
 if (gos == 'Killed'){
-return true;
+//тут удаление и проверка
 }
 }
-});
+});}
 setInterval(function(){
 	if (gamestart == 1){
 		var gameevent = Math.floor(Math.random() * (5000 - 1 + 1)) + 1;
