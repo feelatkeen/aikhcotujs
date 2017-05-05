@@ -51,7 +51,7 @@ function playagain(){
 function gosudarstvaisdead(array){
 _.each(array , function (gos){
 if (gos == 'Killed'){
-//тут удаление и проверка
+return true;
 }
 }
 });}
