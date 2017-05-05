@@ -28,6 +28,9 @@ function changinggosname() {
 	if(contains(gosudarstva,gosudarstvoname)){
 		gosudarstvoname = gosudarstvoname + " 2";
 	}
+	if (gosudarstvoname = ""){
+		gosudarstvoname = "Нонеймия"
+	}
 	console.log(gosudarstvoname);
 	$("#chusnaem").hide();
 	$("#gaem").show();
