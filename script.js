@@ -45,13 +45,16 @@ function findindex(prikol, prikolstring){
 		}
 	}
 }
-function gosudarstvaisdead(rjaka, rjakastring){
-	return false
-} 
 function playagain(){
 	location.reload();
 }
-
+function gosudarstvaisdead(array){
+_.each(array , function (gos){
+if (if gos == 'killed'){
+return true;
+}
+}
+});
 setInterval(function(){
 	if (gamestart == 1){
 		var gameevent = Math.floor(Math.random() * (5000 - 1 + 1)) + 1;
@@ -246,7 +249,7 @@ setInterval(function(){
 			$("#gamerecord").text("Вы продержались " + day + " дней");
 			gamestart = 0;
 		}
-		if(gosudarstvaisdead(gosudarstva, "killed")){
+		if(gosudarstvaisdead(gosudarstva)){
 			$("#gaem").hide();
 			$("#gamenotover").show();
 			$("#gamerecord2").text("Вы продержались " + day + " дней");
