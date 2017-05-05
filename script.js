@@ -54,7 +54,7 @@ if (gos == 'killed'){
 return true;
 }
 }
-});
+};
 setInterval(function(){
 	if (gamestart == 1){
 		var gameevent = Math.floor(Math.random() * (5000 - 1 + 1)) + 1;
