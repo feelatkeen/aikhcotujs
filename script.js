@@ -49,7 +49,7 @@ function playagain(){
 	location.reload();
 }
 function gosudarstvaisdead(array){
-_.each(array , function (gos){
+_.each(array , function (gos)){
 if (gos == 'killed'){
 return true;
 }
