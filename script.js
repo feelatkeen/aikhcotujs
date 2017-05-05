@@ -50,7 +50,7 @@ function playagain(){
 }
 function gosudarstvaisdead(array){
 _.each(array , function (gos){
-if (if gos == 'killed'){
+if (gos == 'killed'){
 return true;
 }
 }
