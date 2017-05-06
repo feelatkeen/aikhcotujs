@@ -30,7 +30,7 @@ function changinggosname() {
 		if (stranatype == 1){
 			gosudarstvoname = "Южная " + gosudarstvoname;
 		}
-		if (stranatype ==2){
+		if (stranatype == 2){
 			gosudarstvoname = "Северная " + gosudarstvoname;
 		}
 	}
