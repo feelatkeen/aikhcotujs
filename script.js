@@ -28,7 +28,7 @@ function changinggosname() {
 	if(contains(gosudarstva,gosudarstvoname)){
 		gosudarstvoname = gosudarstvoname + " 2";
 	}
-	if (gosudarstvoname = ""){
+	if (gosudarstvoname == ""){
 		gosudarstvoname = "Нонеймия";
 	}
 	console.log(gosudarstvoname);
