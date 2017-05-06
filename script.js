@@ -267,6 +267,7 @@ setInterval(function(){
 			$("#gamerecord2").text("Вы продержались " + day + " дней");
 			gamestart = 0;
 		}
+		console.log(gameevent);
 	}
 
 }, 3000);
