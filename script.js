@@ -223,7 +223,7 @@ setInterval(function(){
  						 	gosudarstva[findindex(gosudarstva, warallgn)] = "killed";
  						 }
  						 if(powerstrana < powerstrana2){
- 						 	$("#heh").prepend("<option>" + warallgn +  " уничтожило " + warallg + " в мире праздник." +"</option");
+ 						 	$("#heh").prepend("<option>" + warallgn +  " уничтожило " + warallg + ", в мире праздник." +"</option");
  						 	warallgn = "";
  						 	warall = 0;
  						 	waralliswar = 0;
