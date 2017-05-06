@@ -99,7 +99,7 @@ setInterval(function(){
 		if (gameevent > 3000){
 			var strana = Math.floor(Math.random() * (gosudarstva.length - 1 + 1)) + 1;
 			if (gosudarstva[strana] != "killed"){
-				if (warall = 0){
+				if (warall == 0){
 					warall = 1;
 					warallg = gosudarstva[strana];
 					gosudarstva[strana] = "killed";
