@@ -60,7 +60,11 @@ function playagain(){
     function gosudarstvaisdead(array){
     _.each(array , function (gos){
     if (gos == 'Killed'){
-	    return true;
+	    var index = array.indexOf('Killed');
+            array.splice(index, 1);
+            if (gosudarstva.length == 0){
+                return true;
+           }
     }
     });
     }
