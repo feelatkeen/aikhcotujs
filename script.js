@@ -70,6 +70,7 @@ function playagain(){
 setInterval(function(){
 	if (gamestart == 1){
 		var gameevent = Math.floor(Math.random() * (5000 - 1 + 1)) + 1;
+		console.log(gameevent);
 		var novost = Math.floor(Math.random() * (7 - 1 + 1)) + 1;
 		if (gameevent == 42){
 			var strana = Math.floor(Math.random() * (gosudarstva.length - 1 + 1)) + 1;
@@ -267,7 +268,7 @@ setInterval(function(){
 			$("#gamerecord2").text("Вы продержались " + day + " дней");
 			gamestart = 0;
 		}
-		console.log(gameevent);
+		
 	}
 
 }, 3000);
