@@ -26,7 +26,13 @@ var gosudarstvoname = "undefined";
 function changinggosname() {
 	gosudarstvoname = $("#gosname").val();
 	if(contains(gosudarstva,gosudarstvoname)){
-		gosudarstvoname = gosudarstvoname + " 2";
+		var stranatype = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
+		if (stranatype == 1){
+			gosudarstvoname = "Южная" gosudarstvoname;
+		}
+		if (stranatype ==2){
+			gosudarstvoname = "Северная" gosudarstvoname;
+		}
 	}
 	if (gosudarstvoname == ""){
 		gosudarstvoname = "Нонеймия";
