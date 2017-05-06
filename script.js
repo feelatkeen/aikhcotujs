@@ -28,10 +28,10 @@ function changinggosname() {
 	if(contains(gosudarstva,gosudarstvoname)){
 		var stranatype = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
 		if (stranatype == 1){
-			gosudarstvoname = "Южная" gosudarstvoname;
+			gosudarstvoname = "Южная " + gosudarstvoname;
 		}
 		if (stranatype ==2){
-			gosudarstvoname = "Северная" gosudarstvoname;
+			gosudarstvoname = "Северная " + gosudarstvoname;
 		}
 	}
 	if (gosudarstvoname == ""){
