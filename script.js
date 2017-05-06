@@ -29,7 +29,7 @@ function changinggosname() {
 		gosudarstvoname = gosudarstvoname + " 2";
 	}
 	if (gosudarstvoname = ""){
-		gosudarstvoname = "Нонеймия"
+		gosudarstvoname = "Нонеймия";
 	}
 	console.log(gosudarstvoname);
 	$("#chusnaem").hide();
