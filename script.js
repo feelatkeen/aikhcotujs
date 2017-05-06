@@ -96,7 +96,7 @@ setInterval(function(){
 			$("#gamerecord").text("Мир прожил с войной и злом " + day + " дней, сейчас же просто мир во всем мире. Все победили.");
 			gamestart = 0;
 		}
-		if (gameevent > 3000){
+		if (gameevent == 4999){
 			var strana = Math.floor(Math.random() * (gosudarstva.length - 1 + 1)) + 1;
 			if (gosudarstva[strana] != "killed"){
 				if (warall == 0){
@@ -240,6 +240,7 @@ setInterval(function(){
 						alert(warallg + " НА ВАС НАПАЛО.");
 						waralliswar = 1;
 						inwar = 1;
+						warallgn = gosudarstvoname;
 					}
 				}
 			}
